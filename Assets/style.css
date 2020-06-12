@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: auto, 30px;
+}
+body {
+    text-align: center;
+}
+.page-title {
+   color :purple;
+}
+
+p {
+    padding: 20px;
+    font-size: 22px;
+}
+
+.timer {
+    float: right;
+    padding-right: 40px;
+    
+}
+.high-score {
+    float: left;
+    padding-left: 40px;
+    display: inline-block;
+    color: violet;
+}
+footer {
+    margin: 400px;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    padding: 15px 20px 15px 20px;
+    font-size: 20px;
+}
+.startedBtn {
+    text-align:center;
+    color: white;
+    background-color: purple;
+}
+
+.quiz-heading {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
