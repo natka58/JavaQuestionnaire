@@ -15,15 +15,15 @@
 </header>
 
 <body>
-    <main class="container">
-        <div class="criteriaPage">
+    
+        <section id="criteriaPage">
             <!--Quiz Rules-->
             <h1 id="question1" class="quiz-heading"> Coding Quiz Challenge</h1>
             <p id="question2" class="quiz-criteria">
                 Try to answer the following code-related questions within the time limit.</br>
                 Keep in mind that incorrect answers will penalize your score/time by ten seconds! </p>
             <button id="startBtn" class="startedBtn" type="button">Start Quiz</button>
-        </div>
+            </section>
         <!--Questions and answers space holder-->
         <section id="questArea" class="hidden">
             <p id="questionInfo"></p>
@@ -32,11 +32,32 @@
             <button></button>
             <button></button>
             <div id="achievedScore" class="gone">
-                <!--JavaCode element-->
+                <!--JavaCode-->
                 <p></p>
             </div>
         </section>
-    </main>
+
+    <section id="finish" class="hidden">
+        <h1> All done!</h1>
+        <p> Your final score is <span id="score"></span></p>
+        <div id="name">
+            <p>Enter initials:</p><input id="initials" type="text">
+        <button>Submit</button>
+        </div>
+        <div id="initError" class="gone">
+            <!--JavaCode-->
+            <p></p>
+        </div>
+    </section>
+    
+    <div>
+    <section id="highScores" class="hidden">
+        <h1>High Score</h1>
+    </section>
+    </div>
+<button id="goBack">Back</button>
+<button id="clearScore">Clear High Score</button>
+</section>
     <script src="Assets/test.js"></script>
 </body>
 <footer>
