@@ -49,7 +49,7 @@ var counterTimer = function () {
   if (time > 0) {
     time = time - 1;
     pageContentEl("#time").innerHTML = time;
-    //score at end of test
+    //end of test
   } else {
     clearInterval(clock);
     pageContentEl("#score").innerHTML = score;
@@ -57,7 +57,7 @@ var counterTimer = function () {
   }
 };
 
-//test questions code
+//test questions function
 var setQuestionData = function () {
   pageContentEl("#questArea p").innerHTML = questions[quizCount].questionInfo;
   pageContentEl(
@@ -88,11 +88,7 @@ var questions = [
   },
   {
     questionInfo: "Arrays in JavaScript can be used to store ________",
-    choices: [
-      "numbers and strings",
-      "other arrays",
-      "booleans",
-      "all of the above",
+    choices: ["numbers and strings", "other arrays", "booleans", "all of the above",
     ],
     answer: "all of the above",
   },
@@ -152,9 +148,10 @@ var scoreTimeAdjust = function () {
 //Enter initials
 var enterInitials = function () {
   let initialsRecord = pageContentEl("#initials").value;
-  //if no character selected 
-   if (initialsRecord === "") {
-        document.querySelector("#errorMessage").innerHTML = "Please enter your Initials";
+  //if no character selected
+  if (initialsRecord === "") {
+    document.querySelector("#errorMessage").innerHTML =
+      "Please enter your Initials";
   } else {
     recordArray.push({
       initialRecord: initialsRecord,
@@ -166,7 +163,7 @@ var enterInitials = function () {
     onlyDisplaySection("#highScores");
     recordsHtmlReset();
     pageContentEl("#initials").value = "";
-  };
+  }
 };
 //quiz score value
 var scoreTimeAdjust = function () {
