@@ -20,11 +20,14 @@ p {
     padding-right: 40px;
     
 }
-.high-score {
+#view-score{
     float: left;
-    padding-left: 40px;
+    padding-left: 20px;
     display: inline-block;
-    color: violet;
+   background-color: white;
+   color: blueviolet;
+   border-color: white;
+   font-size: smaller;
 }
 footer {
     margin: 400px;
@@ -41,9 +44,29 @@ button {
     color: white;
     background-color: purple;
 }
+.startedBtn:hover {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: lightpink;
+    border-color: lightpink;
+    padding: 15px 20px 15px 20px
+
+}
 
 .quiz-heading {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
+.disable{
+    pointer-events:none;
+  }
+
+  .hidden{
+    display:none;
+}
+  
+.gone{
+    visibility:hidden;
+} 

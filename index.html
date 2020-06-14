@@ -1,31 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Quiz</title>
-        <link rel="stylesheet" href="Assets/style.css" type="text/css"/>
-    </head>
+    <link rel="stylesheet" href="Assets/style.css" type="text/css" />
+</head>
 
-    <header>
-                <h3 id="timer" class="timer">Time:</h3>
-                <h3 class="high-score">View High Scores</h3>
-       
-    </header>
-    <body>
-    <main class="container">
-        <div class="criteriapage">
-    <h1 id="q1" class="quiz-heading"> Coding Quiz Challenge</h1>
-    <p id="q2" class="quiz-criteria">
-        Try to answer the following code-related questions within the time limit.</br> 
-        Keep in mind that incorrect answers will penalize your score/time by ten seconds! </p>
-    <button id="startBnt" class="startedBtn" type="button">Start Quiz</button>
-    </div>
+<header>
+    <div id="timer"><p>Time: <span id="time">0</span></p></div>
+    <button id="scores" href="">View High Scores</button>
+
+</header>
+
+<body>
     
-</main>
+        <section id="criteriaPage">
+            <!--Quiz Rules-->
+            <h1 id="question1" class="quiz-heading"> Java Quiz Challenge</h1>
+            <p id="question2" class="quiz-criteria">
+                Try to answer the following code-related questions within the time limit.</br>
+                Keep in mind that incorrect answers will penalize your score/time by ten seconds! </p>
+            <button>Start Quiz</button>
+            </section>
+        <!--Questions and answers space holder-->
+        <section id="questArea" class="hidden">
+            <p id="questionInfo"></p>
+              <button></button>
+              <button></button>
+              <button></button>
+              <button></button>
+
+            <div id="achievedScore" class="gone">
+                <!--JavaCode-->
+                <p></p>
+            </div>
+        </section>
+
+   <section id="finish" class="hidden">
+          <h1>All Done!</h1>
+          <p>Your Final Score Is <span id="score"></span></p>
+          <div id="name">
+            <p>Enter Your Iinitials </p><input id="initials" type="text"> 
+            <button>Submit</button>
+          </div>
+          <div id="initError" class="gone">
+            <!--JavaCode-->
+            <p></p>
+        </div>
+    </section>
+    
+    <section id="highScores" class="hidden">
+        <h1>High Score</h1>
+        <div>
+    
+        </div>
+        <button id="goBack">Back</button> 
+        <button id="clearScore">Clear High Score</button>
+      </section>
+  </div>
     <script src="Assets/test.js"></script>
 </body>
 <footer>
     &copy; 2020 by N. Teaca
 </footer>
+
 </html>
