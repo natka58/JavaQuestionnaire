@@ -5,9 +5,13 @@
 }
 body {
     text-align: center;
+    flex: auto;
 }
-.page-title {
-   color :purple;
+
+.quiz-heading {
+     text-align: center;
+     flex: auto;
+     display: inline-block;
 }
 
 p {
@@ -15,58 +19,118 @@ p {
     font-size: 22px;
 }
 
-.timer {
+#timer p{
     float: right;
-    padding-right: 40px;
+    padding-right: 20px;
+    display: inline-block;
+    font-size: 17px;
+    flex: auto;
+    
     
 }
-#view-score{
+#scores{
     float: left;
     padding-left: 20px;
+    margin-top: 50px;
     display: inline-block;
    background-color: white;
    color: blueviolet;
    border-color: white;
    font-size: smaller;
 }
-footer {
-    margin: 400px;
-}
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}  
 
 button {
     background-color: purple;
     color: white;
-    padding: 15px 20px 15px 20px;
-    font-size: 20px;
+    padding: 10px 15px 10px 15px;
+    margin: 10px;
+    font-size: 15px;
+    flex: auto;
+    display: inline-block;
 }
-.startedBtn {
-    text-align:center;
-    color: white;
-    background-color: purple;
+#answersoption {
+    display: block;
+
+    padding: 10px 15px 10px 15px;
+    flex: auto;
+ 
+
 }
-.startedBtn:hover {
+button:hover {
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
     color: white;
     background-color: lightpink;
     border-color: lightpink;
-    padding: 15px 20px 15px 20px
+    padding: 10px 15px 10px 15px
 
 }
-
-.quiz-heading {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+section{
+    max-width: 50%;
+    margin: auto;
 }
-.disable{
-    pointer-events:none;
-  }
 
-  .hidden{
+#achievedScore {
+    border-top: 1px solid blue;
+    color: blue;
+    margin: 10px auto;
+    font-size: 14px;
+}
+.gone {
+    visibility:hidden;
+} 
+
+
+
+  .hidden {
     display:none;
 }
   
-.gone{
-    visibility:hidden;
-} 
+@media (max-width: 690px) {
+    #question2 {
+        font-size: smaller;
+    }
+#question1 {
+    font-size: smaller;
+}
+#questInfo{
+    font-size: smaller;
+}
+#answersoption {
+    padding: 5px 0px 5px 0px;
+    margin: 5px;
+  
+}
+button {
+    padding: 5px 0px 5px 0px;
+    margin: 5px;  
+}
+#scores {
+    font-size: smaller;
+    padding: 5px 0px 5px 0px;
+}
+#timer p{
+   
+    font-size: smaller;
+
+}
+#finish p {
+    font-size: smaller; 
+}
+#name input {
+    padding: 5px;
+}
+h1 {
+    font-size: smaller;
+}
+button:hover {
+    padding: 5px 0px 5px 0px;   
+}
+
+}
