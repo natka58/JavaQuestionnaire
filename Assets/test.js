@@ -152,11 +152,9 @@ var scoreTimeAdjust = function () {
 //Enter initials
 var enterInitials = function () {
   let initialsRecord = pageContentEl("#initials").value;
-  //if no character selected
-  if (initialsRecord === "") {
-    pageContentEl("#initError p").innerHTML = "Please enter character";
-    pageContentEl("#initError").classList.remove("gone", initError());
-    //record initials and score
+  //if no character selected 
+   if (initialsRecord === "") {
+        document.querySelector("#errorMessage").innerHTML = "Please enter your Initials";
   } else {
     recordArray.push({
       initialRecord: initialsRecord,
@@ -168,7 +166,7 @@ var enterInitials = function () {
     onlyDisplaySection("#highScores");
     recordsHtmlReset();
     pageContentEl("#initials").value = "";
-  }
+  };
 };
 //quiz score value
 var scoreTimeAdjust = function () {
